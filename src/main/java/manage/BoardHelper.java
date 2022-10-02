@@ -13,10 +13,6 @@ public class BoardHelper extends HelperBase{
         super(wd);
     }
 
-    public BoardHelper(WebDriver wd) {
-        super(wd);
-    }
-
     public void initBoardCreation() {
         click(By.cssSelector("[data-test-id='header-create-menu-button']"));
         click(By.cssSelector("[aria-label='BoardIcon']"));

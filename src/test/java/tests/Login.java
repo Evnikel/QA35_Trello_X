@@ -1,11 +1,11 @@
-package Tests;
+package tests;
 
 import model.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class Login extends TestBase {
+public class Login extends TestBase{
     @BeforeTest
     public void preConditions() {
         if (app.getUser().isLogged()) {
@@ -17,7 +17,8 @@ public class Login extends TestBase {
 
     @Test
     public void loginPositive1() {
-        User user = new User().withEmail("evnikel@gmail.com").withPassword("EB106201!");
+        User user = new User().withEmail("evnikel@gmail.com").withPassword("EB106201eb!");
+
         app.getUser().initLogin();
         app.getUser().pause(2000);
         app.getUser().fillLoginForm(user);
@@ -43,5 +44,4 @@ public class Login extends TestBase {
 
 
     }
-
 }

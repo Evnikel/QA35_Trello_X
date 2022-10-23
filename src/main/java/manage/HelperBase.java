@@ -3,6 +3,9 @@ package manage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class HelperBase {
     WebDriver wd;
 
@@ -23,5 +26,12 @@ public class HelperBase {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+    public void openTabAndSwitch() {
+        // ((JavascriptExecutor)wd).executeScript("window.open");
+        List<String> tabs = new ArrayList<>(wd.getWindowHandles());
+        //wd.switchTo().window((tabs.get(1)));
+        wd.switchTo().window(tabs.get(tabs.size()-1));
+        wd.navigate().to("https://www.google.com/");
     }
 }

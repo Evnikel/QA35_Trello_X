@@ -11,4 +11,5 @@ public class Board {
         this.title = title;
         return this;
     }
+
 }

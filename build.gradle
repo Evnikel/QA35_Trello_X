@@ -12,6 +12,7 @@ repositories {
 dependencies {
     implementation 'org.testng:testng:7.6.1'
     implementation 'org.seleniumhq.selenium:selenium-java:4.4.0'
+    implementation 'ch.qos.logback:logback-classic:1.2.8'
 }
 
 test {

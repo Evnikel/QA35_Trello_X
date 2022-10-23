@@ -7,19 +7,25 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-
 public class BoardHelper extends HelperBase{
     public BoardHelper(WebDriver wd) {
         super(wd);
     }
-
     public void initBoardCreation() {
         click(By.cssSelector("[data-test-id='header-create-menu-button']"));
         click(By.cssSelector("[aria-label='BoardIcon']"));
     }
 
     public void fillInBoardCreationForm(Board board) {
+
         type(By.cssSelector("[data-test-id='create-board-title-input']"),board.getTitle());
+        //type(By.cssSelector("input.nch-textfield__input "), board.getTitle());
+
+    }
+    public void fillInBoardCreationForm(String title) {
+        type(By.cssSelector("[data-test-id='create-board-title-input']"),title);
+        //type(By.cssSelector("input.nch-textfield__input "), title);
+
     }
 
     public void scrolldownTheForm() {
@@ -41,11 +47,9 @@ public class BoardHelper extends HelperBase{
     }
 
     public int getBoardCount() {
-        return wd.findElements(By.cssSelector(".boards-page-board-section-list-item"))
-                .size()-1-recentlyViewedBoards();
+        return wd.findElements(By.cssSelector(".boards-page-board-section-list-item")).size()-1-recentlyViewedBoards();
     }
     public int recentlyViewedBoards(){
-        return wd.findElements(By.xpath("//*[contains(@class,'icon-clock')]/../..//div"))
-                .size();
+        return wd.findElements(By.xpath("//*[contains(@class,'icon-clock')]/../..//div")).size();
     }
 }

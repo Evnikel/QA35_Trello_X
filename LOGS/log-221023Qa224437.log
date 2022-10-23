@@ -1,0 +1,63 @@
+22:44:40.438  INFO  manage.ApplicationManager - Test starts---
+22:44:43.326  INFO  tests.TestBase - Start tests---boardCreation1
+22:44:43.332  INFO  manage.MyListener - Before find element By--By.cssSelector: [href='/login']
+22:44:43.421  INFO  manage.MyListener - After finds Elements By --By.cssSelector: [href='/login']
+22:44:46.999  INFO  manage.MyListener - Before find element By--By.cssSelector: #user
+22:44:47.084  INFO  manage.MyListener - After finds Elements By --By.cssSelector: #user
+22:44:47.150  INFO  manage.MyListener - Before find element By--By.cssSelector: #user
+22:44:47.184  INFO  manage.MyListener - After finds Elements By --By.cssSelector: #user
+22:44:47.213  INFO  manage.MyListener - Before find element By--By.cssSelector: #user
+22:44:47.229  INFO  manage.MyListener - After finds Elements By --By.cssSelector: #user
+22:44:47.275  INFO  manage.MyListener - Before find element By--By.cssSelector: #login
+22:44:47.297  INFO  manage.MyListener - After finds Elements By --By.cssSelector: #login
+22:44:52.348  INFO  manage.MyListener - Before find element By--By.cssSelector: #password
+22:44:52.373  INFO  manage.MyListener - After finds Elements By --By.cssSelector: #password
+22:44:52.430  INFO  manage.MyListener - Before find element By--By.cssSelector: #password
+22:44:52.454  INFO  manage.MyListener - After finds Elements By --By.cssSelector: #password
+22:44:52.490  INFO  manage.MyListener - Before find element By--By.cssSelector: #password
+22:44:52.510  INFO  manage.MyListener - After finds Elements By --By.cssSelector: #password
+22:44:52.582  INFO  manage.MyListener - Before find element By--By.cssSelector: #login-submit
+22:44:52.603  INFO  manage.MyListener - After finds Elements By --By.cssSelector: #login-submit
+22:44:54.660  INFO  manage.MyListener - Before Find Elements By ---By.cssSelector: .boards-page-board-section-list-item
+22:44:58.235  INFO  manage.MyListener - Before find elements By--By.cssSelector: .boards-page-board-section-list-item
+22:44:58.236  INFO  manage.MyListener - List size is --2
+22:44:58.237  INFO  manage.MyListener - Before Find Elements By ---By.xpath: //*[contains(@class,'icon-clock')]/../..//div
+22:45:03.254  INFO  manage.MyListener - Before find elements By--By.xpath: //*[contains(@class,'icon-clock')]/../..//div
+22:45:03.254  INFO  manage.MyListener - List size is --0
+22:45:03.254  INFO  manage.MyListener - Before find element By--By.cssSelector: [data-test-id='header-create-menu-button']
+22:45:03.273  INFO  manage.MyListener - After finds Elements By --By.cssSelector: [data-test-id='header-create-menu-button']
+22:45:03.382  INFO  manage.MyListener - Before find element By--By.cssSelector: [aria-label='BoardIcon']
+22:45:03.477  INFO  manage.MyListener - After finds Elements By --By.cssSelector: [aria-label='BoardIcon']
+22:45:06.599  INFO  manage.MyListener - Before find element By--By.cssSelector: .nch-textfield__input 
+22:45:11.692  INFO  manage.MyListener - Have a problem--
+22:45:11.694  INFO  manage.MyListener - The name of error method--findElement
+22:45:11.702  INFO  manage.MyListener - Describe of error--org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".nch-textfield__input "}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-EVABS4F', ip: '192.168.1.138', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [baa22ef8a039f2b6069d930809808756, findElement {using=css selector, value=.nch-textfield__input }]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\evnik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62224}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62224/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: baa22ef8a039f2b6069d930809808756
+22:45:11.705  INFO  manage.MyListener - ############################################################################
+22:45:11.706  INFO  manage.MyListener - ChromeDriver: chrome on WINDOWS (baa22ef8a039f2b6069d930809808756)
+22:45:11.715  INFO  manage.MyListener - Screen with error is---1986src/test/resources/Screenshots/screen1986.png
+22:45:12.023  INFO  tests.TestBase - ****************************************************************************************
+22:45:12.024  INFO  tests.TestBase - Start tests---boardCreation1
+22:45:12.024  INFO  manage.MyListener - Before find element By--By.cssSelector: [href='/login']
+22:45:17.086  INFO  manage.MyListener - Have a problem--
+22:45:17.087  INFO  manage.MyListener - The name of error method--findElement
+22:45:17.087  INFO  manage.MyListener - Describe of error--org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"[href='/login']"}
+  (Session info: chrome=106.0.5249.119)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DESKTOP-EVABS4F', ip: '192.168.1.138', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [baa22ef8a039f2b6069d930809808756, findElement {using=css selector, value=[href='/login']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\evnik\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:62224}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62224/devtoo..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: baa22ef8a039f2b6069d930809808756
+22:45:17.089  INFO  manage.MyListener - ############################################################################
+22:45:17.090  INFO  manage.MyListener - ChromeDriver: chrome on WINDOWS (baa22ef8a039f2b6069d930809808756)
+22:45:17.090  INFO  manage.MyListener - Screen with error is---1420src/test/resources/Screenshots/screen1420.png
+22:45:17.332  INFO  tests.TestBase - ****************************************************************************************
